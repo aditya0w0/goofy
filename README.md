@@ -52,6 +52,7 @@ A high-performance, responsive landing page built with Next.js 15, featuring smo
 | Category        | Technology                       |
 | --------------- | -------------------------------- |
 | **Framework**   | Next.js 15 (App Router)          |
+| **Backend**     | Firebase (Firestore + Auth)      |
 | **Styling**     | Tailwind CSS                     |
 | **UI Library**  | Shadcn/ui                        |
 | **Icons**       | Lucide React                     |
@@ -61,13 +62,14 @@ A high-performance, responsive landing page built with Next.js 15, featuring smo
 ## Architecture
 
 ```
-src/
+goofy/
 ├── components/
 │   ├── nav/
 │   │   ├── navbar.jsx              # Main navigation
 │   │   ├── NavbarSkeleton.jsx      # Loading state
-│   │   └── Navigation/
-│   │       └── MobileNav.jsx       # Mobile menu
+│   │   └── logic/
+│   │       ├── DesktopNav.jsx      # Desktop navigation
+│   │       └── MobileNavbar.jsx    # Mobile navigation
 │   ├── hero/
 │   │   ├── HeroSection.jsx         # Hero component
 │   │   └── HeroSkeleton.jsx        # Hero loading state
@@ -75,12 +77,19 @@ src/
 │   │   ├── button.jsx              # Reusable button
 │   │   └── skeleton.jsx            # Loading skeleton
 │   └── PageLoader.jsx              # Smart connection detection
+├── lib/
+│   ├── firebase/                   # Firebase config & initialization
+│   ├── api/                        # API utility functions
+│   ├── hooks/                      # Custom React hooks for Firebase
+│   ├── services/                   # Business logic services
+│   └── utils.js                    # Utility functions
 ├── app/
+│   ├── api/                        # Next.js API routes
 │   ├── layout.js                   # Root layout
 │   ├── page.js                     # Home page
 │   └── globals.css                 # Global styles
-└── public/
-    └── assets/                     # Static assets
+├── types/                          # TypeScript type definitions
+└── public/                         # Static assets
 ```
 
 ## Quick Start
@@ -91,6 +100,7 @@ src/
 
 - Node.js 18.0 or higher
 - Package manager (npm, yarn, pnpm, or bun)
+- Firebase account (for backend services)
 - Patience (lots of it)
 - Low expectations
 
@@ -100,6 +110,15 @@ src/
 git clone https://github.com/aditya0w0/goofy.git
 cd goofy
 npm install
+```
+
+### Firebase Setup
+
+```bash
+# 1. Create Firebase project at https://console.firebase.google.com
+# 2. Enable Firestore Database
+# 3. Enable Authentication
+# 4. Copy config to .env.local (see Environment Variables section)
 ```
 
 ### Development
@@ -156,6 +175,15 @@ npm run start
 <HeroSkeleton />            // Hero section loading state
 ```
 
+### Firebase Integration
+
+```jsx
+// Custom hooks for Firebase operations (coming soon)
+useAuth(); // Authentication state management
+useFirestore(); // Firestore data operations
+useFirebaseStorage(); // File upload/download
+```
+
 ## Configuration
 
 ### Environment Variables
@@ -166,6 +194,14 @@ Create a `.env.local` file:
 # Site Configuration
 NEXT_PUBLIC_SITE_URL=https://your-domain.com
 NEXT_PUBLIC_SITE_NAME="Modern Landing Page"
+
+# Firebase Configuration (get from Firebase Console)
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
 
 # Analytics (Optional)
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
@@ -271,8 +307,24 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 - Code quality: Questionable at best
 - Best practices: AI tried, humans should verify
-- Security: Please audit before production
+- Security: Please audit before production (especially for government data!)
 - Performance: Theoretical until proven otherwise
 - Maintainability: Good luck future developers
 
-**TL;DR**: AI wrote this. Humans beware. Your server bills may thank you for not using this in production.
+🏛️ **AUDIT HEADACHE WARNING**:
+
+- Firebase for government data = compliance nightmare
+- Performance scores that'll make auditors cry
+- AI-generated code in sensitive systems = career suicide
+- 5.2s loading times = security vulnerabilities waiting to happen
+- Your IT department will need therapy after reviewing this
+
+🔥 **Firebase Reality Check**:
+
+- ✅ Early phase prototyping: Sure, why not
+- ❌ Production government use: Compliance nightmare
+- ⚠️ Data residency: Google controls where your data lives
+- 🤷‍♂️ FedRAMP compliance: Good luck with that paperwork
+- 💸 Audit costs: More expensive than rewriting from scratch
+
+**TL;DR**: AI wrote this. Humans beware. Your server bills AND security audits may thank you for not using this in production. Government agencies should run away screaming.
