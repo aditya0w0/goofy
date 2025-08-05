@@ -1,6 +1,9 @@
 # Modern Landing Page
 
-A high-performance, responsive landing page built with Next.js 15, featuring smooth animations, intelligent loading states, and optimized Lighthouse scores.
+⚠️ **AI-GENERATED CODE WARNING** ⚠️  
+This project was built by AI assistance. Expect bugs, questionable decisions, and code that might make senior developers cry. Use at your own risk.
+
+A high-performance, responsive landing page built with Next.js 15, featuring smooth animations, intelligent loading states, and optimized Lighthouse scores (when it works).
 
 ![Landing Page Preview](./docs/screenshots/hero-desktop.png)
 
@@ -21,26 +24,28 @@ A high-performance, responsive landing page built with Next.js 15, featuring smo
 
 ## Features
 
+### ⚠️ Disclaimer: AI-Generated Features (Your Mileage May Vary)
+
 ### Performance
 
-- **Sub-1s LCP**: Optimized for Core Web Vitals
-- **Smart Loading**: Adaptive skeleton loading for slow connections
-- **Critical CSS**: Inlined critical styles for faster rendering
-- **Image Optimization**: Preloaded critical assets
+- **Sub-1s LCP**: Optimized for Core Web Vitals (supposedly)
+- **Smart Loading**: Adaptive skeleton loading for slow connections (might just be regular loading)
+- **Critical CSS**: Inlined critical styles for faster rendering (AI thought this was a good idea)
+- **Image Optimization**: Preloaded critical assets (or just random images)
 
 ### User Experience
 
-- **Responsive Design**: Mobile-first approach with fluid breakpoints
-- **Smooth Animations**: 60fps animations with cubic-bezier easing
-- **Glass Morphism**: Modern backdrop blur effects
-- **Accessibility**: WCAG 2.1 AA compliant
+- **Responsive Design**: Mobile-first approach with fluid breakpoints (tested on AI's imagination)
+- **Smooth Animations**: 60fps animations with cubic-bezier easing (may cause seizures)
+- **Glass Morphism**: Modern backdrop blur effects (because AI loves trendy stuff)
+- **Accessibility**: WCAG 2.1 AA compliant (AI claims, humans didn't verify)
 
 ### Developer Experience
 
-- **Component Architecture**: Modular, reusable components
-- **TypeScript Ready**: Easy migration to TypeScript
-- **Shadcn/ui Integration**: Professional component library
-- **Performance Monitoring**: Built-in Core Web Vitals tracking
+- **Component Architecture**: Modular, reusable components (AI tried its best)
+- **TypeScript Ready**: Easy migration to TypeScript (good luck with that)
+- **Shadcn/ui Integration**: Professional component library (AI copy-pasted from docs)
+- **Performance Monitoring**: Built-in Core Web Vitals tracking (might be tracking wrong things)
 
 ## Tech Stack
 
@@ -80,10 +85,14 @@ src/
 
 ## Quick Start
 
+### ⚠️ AI Warning: These instructions might work, but no guarantees
+
 ### Prerequisites
 
 - Node.js 18.0 or higher
 - Package manager (npm, yarn, pnpm, or bun)
+- Patience (lots of it)
+- Low expectations
 
 ### Installation
 
@@ -97,33 +106,35 @@ npm install
 
 ```bash
 npm run dev
+# Pray it works on first try
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser (or whatever port it decides to use).
 
 ### Production Build
 
 ```bash
 npm run build
 npm run start
+# Cross your fingers
 ```
 
 ## Performance Metrics
 
-| Metric                       | Score   | Target  |
-| ---------------------------- | ------- | ------- |
-| **Largest Contentful Paint** | < 1.0s  | < 2.5s  |
-| **First Input Delay**        | < 100ms | < 100ms |
-| **Cumulative Layout Shift**  | < 0.1   | < 0.1   |
-| **Performance Score**        | 95+     | 90+     |
+| Metric                       | AI Claims | Reality Check | Target  |
+| ---------------------------- | --------- | ------------- | ------- |
+| **Largest Contentful Paint** | < 1.0s    | TBD by humans | < 2.5s  |
+| **First Input Delay**        | < 100ms   | Probably not  | < 100ms |
+| **Cumulative Layout Shift**  | < 0.1     | LOL           | < 0.1   |
+| **Performance Score**        | 95+       | 🤷‍♂️            | 90+     |
 
 ### Optimization Techniques
 
-- **Critical Resource Hints**: DNS prefetch, preconnect, preload
-- **Smart Code Splitting**: Component-level lazy loading
-- **Connection Awareness**: Adaptive loading based on network speed
-- **Image Optimization**: WebP format with fallbacks
-- **Font Loading**: Display swap for better perceived performance
+- **Critical Resource Hints**: DNS prefetch, preconnect, preload (AI read this somewhere)
+- **Smart Code Splitting**: Component-level lazy loading (may cause more problems)
+- **Connection Awareness**: Adaptive loading based on network speed (revolutionary!)
+- **Image Optimization**: WebP format with fallbacks (because PNG is for peasants)
+- **Font Loading**: Display swap for better perceived performance (perception vs reality)
 
 ## Component Documentation
 
@@ -226,21 +237,23 @@ Monitor your site's performance:
 
 ## Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md).
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) (which probably doesn't exist).
+
+⚠️ **REALITY CHECK**: This is AI-generated code. Contributing means fixing what AI broke.
 
 ### Development Workflow
 
 1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/new-feature`
-3. Make your changes
-4. Run tests: `npm run test`
-5. Submit a pull request
+2. Create a feature branch: `git checkout -b feature/fix-ai-mistakes`
+3. Make your changes (probably fixing everything)
+4. Run tests: `npm run test` (tests may not exist)
+5. Submit a pull request (good luck explaining AI decisions)
 
 ### Code Standards
 
-- **ESLint**: Configured with Next.js recommended rules
-- **Prettier**: Code formatting enforced
-- **Conventional Commits**: Required for PR acceptance
+- **ESLint**: Configured with Next.js recommended rules (AI hopes they work)
+- **Prettier**: Code formatting enforced (by robots, for robots)
+- **Conventional Commits**: Required for PR acceptance (humans must clean up AI mess properly)
 
 ## License
 
@@ -248,6 +261,18 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Support
 
-- **Documentation**: [Project Wiki](https://github.com/aditya0w0/goofy/wiki)
-- **Issues**: [GitHub Issues](https://github.com/aditya0w0/goofy/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/aditya0w0/goofy/discussions)
+- **Documentation**: [Project Wiki](https://github.com/aditya0w0/goofy/wiki) (may contain AI hallucinations)
+- **Issues**: [GitHub Issues](https://github.com/aditya0w0/goofy/issues) (expect many)
+- **Discussions**: [GitHub Discussions](https://github.com/aditya0w0/goofy/discussions) (mostly about what AI got wrong)
+
+## Final Disclaimer
+
+🤖 **This entire project was built with AI assistance. What could go wrong?**
+
+- Code quality: Questionable at best
+- Best practices: AI tried, humans should verify
+- Security: Please audit before production
+- Performance: Theoretical until proven otherwise
+- Maintainability: Good luck future developers
+
+**TL;DR**: AI wrote this. Humans beware. Your server bills may thank you for not using this in production.
