@@ -6,7 +6,7 @@ A high-performance, responsive landing page built with Next.js 15, featuring smo
 
 ## Live Demo
 
-🔗 **[View Live Demo](https://your-domain.vercel.app)**
+🔗 **[View Repository](https://github.com/aditya0w0/goofy)**
 
 ## Screenshots
 
@@ -88,8 +88,8 @@ src/
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/modern-landing-page.git
-cd modern-landing-page
+git clone https://github.com/aditya0w0/goofy.git
+cd goofy
 npm install
 ```
 
@@ -201,7 +201,7 @@ NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 
 ### Vercel (Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/modern-landing-page)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/aditya0w0/goofy)
 
 ### Manual Deployment
 
@@ -248,6 +248,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Support
 
-- **Documentation**: [Project Wiki](https://github.com/yourusername/modern-landing-page/wiki)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/modern-landing-page/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/modern-landing-page/discussions)
+- **Documentation**: [Project Wiki](https://github.com/aditya0w0/goofy/wiki)
+- **Issues**: [GitHub Issues](https://github.com/aditya0w0/goofy/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/aditya0w0/goofy/discussions)
